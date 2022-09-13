@@ -2,18 +2,17 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    min-height: 125vh;
-    font-family: ro;
+    min-height: 175vh;
 }
 
 .header {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
     background-color: #1f2937;
     padding: 0px;
-    flex: 1;
     max-height: 50px;
 }
 
@@ -81,12 +80,17 @@ button {
 }
 
 .about-text {
+    margin-bottom: 18px;
     font-size: 36px;
     font-weight: bolder;
     color: #1f2937;
 }
 
-.media,
+.media {
+    display: flex;
+    gap: 44px;
+}
+
 .body-imgs {
     display: flex;
     gap: 36px;
@@ -94,19 +98,77 @@ button {
 
 .body-imgs img {
     max-width: 160px;
+    border: #3882f6 solid 4px;
+    border-radius: 16px;
 }
 
 .imgtext {
-    font-size: 14px;
+    font-size: 16px;
     color: grey;
-    min-width: 160px;
+    width: 160px;
     text-align: center;
 }
 
 .quotation {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 36px;
+    color: #1f293780;
+    max-width: 800px;
+}
+
+.quoter {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-right: 560px;
+}
+
+
+.ad {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adbox {
+    display: flex;
+    background-color: #3882f6;
+    border: #3882f6 4px;
+    border-radius: 8px;
+    color: white;
+    flex: 1;
+    max-width: 1000px;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.adbox div p {
+    margin: 0;
+}
+
+.adbox button {
+    min-width: 128px;
+    border: white solid 2px;
+    border-radius: 8px;
 }
 
 .footer {
-    flex: 1;
+    display: flex;
+    height: 64px;
+    background-color: #1f2937;
+    color: white;
+    justify-content: center;
+    align-items: center;
 }
